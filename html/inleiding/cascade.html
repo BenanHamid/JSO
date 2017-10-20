@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Css Cascading</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p{
+                margin: 30px 0px 30px 0px; /* of margin: 30px 0px; */
+            }
+            #tweede{
+                margin: 30px 30px 30px 30px; /* of margin: 30px */
+            }
+            h1{
+                font-size: 120px; /* deze instelling wordt overschreven door de h1 die hierna volgt */
+            }
+            h1{
+                font-size: 16px; /* deze instelling overschrijft de vorige */
+            }
+            h2{
+                font-size: 120px !important; /*in principe zou deze instelling overschreven worden, maar dankzij !important niet */
+            }
+            h2{
+                font-size: 16px; /* Deze instelling overschrijft !important niet */
+            }
+        </style>
+    </head>
+    <body>
+    <p>Dit is een gewone paragraaf, maar de instellingen van browser zijn overschreven door CSS</p>
+    <p id="tweede">Opmaak via een id is meer specifiek dan opmaak via een element.</p>
+    <h1>Een hoofdstuk</h1>
+    <h2>Een hoofdstuk van een lager niveau</h2>
+</body>
+</html>
