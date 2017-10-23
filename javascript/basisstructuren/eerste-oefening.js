@@ -14,7 +14,7 @@ console.log('Het product van %s en %s is', eersteGetal, tweedeGetal, product );
 var loon = toetsenbord.question('Tik je loon in: ');
 var loonsverhoging = toetsenbord.question('Tik je loonsverhoging in: ');
 
-l = +loon;
+l = +loon; //of l = parseInt(loon);
 v = +loonsverhoging;
 
 var nieuweLoon = (l + v);
