@@ -13,11 +13,11 @@ geheelGetal = 2016;
 // nietGedeclareerd = "dit mag niet !!!";  // fout bij uitvoering
 
 //een voor een afdrukken:
-console.log("geheelGetal          = " + geheelGetal);
-console.log("grootsteGeheelGetal   = " + grootsteGeheelGetal);
-console.log("decimaalGetal   = " + decimaalGetal);
-console.log("string        = " + string);
-console.log("boolean = " + boolean);
-console.log("chA           = " + chA);
-console.log("chUnicodeVb   = " + chUnicodeVb);
-console.log("chMinimum     = " + chMinimum);
+console.log("geheelGetal             = " + geheelGetal);
+console.log("grootsteGeheelGetal     = " + grootsteGeheelGetal);
+console.log("decimaalGetal           = " + decimaalGetal);
+console.log("string                  = " + string);
+console.log("boolean                 = " + boolean);
+console.log("chA                     = " + chA);
+console.log("chUnicodeVb             = " + chUnicodeVb);
+console.log("chMinimum               = " + chMinimum);
