@@ -3,10 +3,10 @@
 var toetsenbord = require('readline-sync');
 var punten = toetsenbord.question("punten: ");
 var graad = "";
-switch (true) {
+switch (true) { // switch гледа expresie дали е true или false, в случая гледа дали числата са по-малки или по-големи от 0 или 20. 
     case punten < 0:
     case punten > 20:
-        graad = "ongeldige score";
+        graad = "ongeldige score"; 
         break;
     case punten < 10:
         graad = "Onvoldoende";

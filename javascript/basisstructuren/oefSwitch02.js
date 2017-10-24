@@ -2,14 +2,14 @@
 
 var toetsenbord = require('readline-sync');
 var punten = toetsenbord.question("punten: ");
-var graad = "";
+var graad = ""; // празен string 
 if (punten >= 0 && punten <= 20) {
     switch (parseInt(punten)) {
         case 10:
         case 11:
         case 12:
         case 13:
-            graad = "Voldoende";
+            graad = "Voldoende"; // празният string се променя тук
             break;
         case 14:
         case 15:

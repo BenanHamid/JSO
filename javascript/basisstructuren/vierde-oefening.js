@@ -3,7 +3,7 @@
 var toetsenbord = require('readline-sync');
 var punten = parseInt(toetsenbord.question('Voer je punten in: '), 10);
 
-switch (punten) {
+switch (true) {
     case (punten < 10):
         console.log('Onvoldoende');
         break;
