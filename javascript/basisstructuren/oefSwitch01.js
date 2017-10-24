@@ -21,3 +21,5 @@ switch (operator) {
     default:
         console.log("Deze bewerking ken ik niet");
 }
+
+// За повече информация за radix-а https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
