@@ -1,6 +1,10 @@
 'use strict';
 
+<<<<<<< HEAD
 var smurf; // = undefined
+=======
+var smurf;  // = undefined
+>>>>>>> fa5040a410227e8fb119da16baf8cbed4db56e37
 
 console.log(1+1);  // 2
 console.log("1"+1); // 11
