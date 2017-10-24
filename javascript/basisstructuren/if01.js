@@ -35,3 +35,5 @@ if (uur >= 9 && uur <= 12) { // && използва се за 'и'
 if (uur < 9 || uur > 18) {
 	console.log('buiten de werkuren');
 }
+
+// за && и || -> http://www.grauw.nl/blog/entry/510
