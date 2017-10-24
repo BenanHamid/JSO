@@ -1,6 +1,6 @@
 'use strict';
 
-var smurf;
+var smurf;  // = undefined
 
 console.log(1+1);  // 2
 console.log("1"+1); // 11
