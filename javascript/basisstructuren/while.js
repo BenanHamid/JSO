@@ -2,6 +2,7 @@
 
 var toetsenbord = require('readline-sync');
 var som = 0;
+//var som; //undefined
 var getal = parseInt(toetsenbord.question("Geef geheel getal (<0 om te stoppen): "), 10);
 while (getal >= 0) {
     som = som + getal;
