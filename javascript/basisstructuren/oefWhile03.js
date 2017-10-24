@@ -1,6 +1,6 @@
 'use strict';
 var toetsenbord = require('readline-sync');
-var result, geslacht, leeftijd, jongeVrouwen = 0, oudeVrouwen = 0, jongeMannen = 0, oudeMannen = 0;
+var result, geslacht, leeftijd, jongeVrouwen = 0, plus25Vrouwen = 0, jongeMannen = 0, plus25Mannen = 0;
 geslacht = toetsenbord.question("Geef geslacht (m/v): ");
 while ((geslacht == "m") || (geslacht == "v")) {
     leeftijd = toetsenbord.question("Geef leeftijd: ");
@@ -10,7 +10,7 @@ while ((geslacht == "m") || (geslacht == "v")) {
             jongeMannen = jongeMannen + 1;
         }
         else {
-            oudeMannen = oudeMannen + 1;
+            plus25Mannen = plus25Mannen + 1;
         }
     }
     else {
@@ -18,10 +18,12 @@ while ((geslacht == "m") || (geslacht == "v")) {
             jongeVrouwen = jongeVrouwen + 1;
         }
         else {
-            oudeVrouwen = oudeVrouwen + 1;
+            plus25Vrouwen = plus25Vrouwen + 1;
         }
     }
     geslacht = toetsenbord.question("Geef geslacht (m/v): ");
 }
-result = "\t<25\t>=25\nmannen\t"+jongeMannen+"\t"+oudeMannen+"\nvrouwen\t"+jongeVrouwen+"\t"+oudeVrouwen;
+result = "\t<25\t>=25\nmannen\t"+jongeMannen+"\t"+plus25Mannen+"\nvrouwen\t"+jongeVrouwen+"\t"+plus25Vrouwen;
 console.log(result);
+
+// \t - табулация \n - нов ред
