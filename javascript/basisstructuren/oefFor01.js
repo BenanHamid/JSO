@@ -14,7 +14,7 @@ for (var aantal = startAantal; aantal > 0; aantal--) {
 	}
 	*/
 	// met de vraagtekenoperator:
-	tmp = aantal > 1 ? "s" : "";
+	tmp = aantal > 1 ? "s" : ""; // от лявата страна е ако условието е вярно, а от дясно обратното.
 	console.log("%s %s%s of %s on the wall,", aantal, recipient, tmp, inhoud);
 	console.log("%s %s%s of %s.", aantal, recipient, tmp, inhoud);
 	console.log("Take one down, pass it around,");
