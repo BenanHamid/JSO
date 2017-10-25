@@ -11,3 +11,10 @@ for (var i = 0; i < aantal; i++) {
     result += "*\n";
 }
 console.log(result);
+
+// of:
+var spaties = "";
+for (var rij = 1; rij <= aantal; rij++) {
+    console.log(spaties + "*");
+    spaties += " ";
+}
