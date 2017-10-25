@@ -1,7 +1,7 @@
 'use strict';
 
 function celsius(f){
-    return 5.0 / 9.0 * (f - 32);
+    return 5.0 / 9.0 * (f - 32); // изписани са направо в трета стъпка поради простата причина, че няма нужда от други стъпки
 }
 
 function fahrenheit(c){

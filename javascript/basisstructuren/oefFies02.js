@@ -1,17 +1,17 @@
 'use strict';
 
 var toetsenbord = require('readline-sync');
-const WISSELKOERS = 40.3399;
+const WISSELKOERS = 40.3399; //изписано е с  главни букви, за да се забележи, че е константа
 
 var prijs_brood, prijs_melk;
 
 function BEFNaarEuro(bedrag) {
-    var resultaat = bedrag / WISSELKOERS;
+    var resultaat = bedrag / WISSELKOERS; // може направо да се коминира стъпка 1 и 2, както в случая
     return resultaat;
 }
 
 function EuroNaarBEF(bedrag) {
-    return bedrag * WISSELKOERS;
+    return bedrag * WISSELKOERS; // в слуачае е обикновено умножение, затова направо се премине в и да се стъпка 3 
 }
 
 prijs_brood = toetsenbord.question("Tik de prijs (EUR) van een brood in: ");
