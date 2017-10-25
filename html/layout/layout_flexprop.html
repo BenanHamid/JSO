@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>De Flex property</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .parent {
+            display: flex;
+        }
+        .item:first-child{
+            background: greenyellow;
+        }
+        .item:nth-child(2){
+            background: mediumturquoise;
+        }
+        .item:last-child{
+            background: red;
+        }
+        div.groter{
+            flex-grow: 1;
+        }
+        .item{
+            flex: 0 1 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item">een</div>
+        <div class="item groter">twee</div>
+        <div class="item">drie</div>
+    </div>
+</body>
+
+</html>
