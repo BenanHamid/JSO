@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>CSS Selectors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h1.belangrijk {
+            color: red;
+        }
+        
+        p em {
+            font-size: 2em;
+        }
+        
+        div>li {
+            text-decoration: underline;
+        }
+        h1, p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="belangrijk">Eerste hoofdstuk</h1>
+    <p class="belangrijk">Eerste paragraaf van het <em>eerste</em> hoofdstuk</p>
+    <h1>Tweede <em>hoofdstuk</em></h1>
+    <em class="belangrijk">Een tekst in het tweede hoofdstuk</em>
+    <div>
+        De lijst:
+        <ul>
+            <li class="active belangrijk">Een</li>
+            <li>twee</li>
+            <li>drie</li>
+        </ul>
+    </div>
+</body>
+
+</html>
