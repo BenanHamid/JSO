@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+           main{
+               height: 100vh;
+               display: flex;
+               width: 50%;
+           }
+           footer{
+               display: flex;
+           }
+           .een{
+               flex-grow: 1;
+               display: flex;               
+               background: blue;
+           }
+           .twee{
+               flex-grow: 2;
+               display: flex;
+               background: lawngreen;
+           }
+           .drie{
+               flex-grow: 1;
+               display: flex;
+               background: brown;
+           }
+           .inside{
+               width: 200px;
+               height: 100px;
+               margin: auto;
+               background: red;
+           }
+           .smaller{
+               width: 20px;
+           }
+        </style>
+    </head>
+    <body>
+        <main>
+        <div class="een">
+            <div class="inside"></div>
+        </div>
+        <div class="twee">
+             <div class="inside smaller"></div>
+        </div>
+        <div class="drie">
+             <div class="inside"></div>
+        </div>
+        </main>
+        <footer>
+            tekst
+        </footer>
+    </body>
+</html>

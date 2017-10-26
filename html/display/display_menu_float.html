@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .menu {
+            list-style-type: none;
+            border-style: solid;
+            padding: 0px;
+            border-width: 0 0 1px 0;
+        }
+        
+        .menu li {
+            float: left;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px 1px 0px 1px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 5px;
+            margin: 0 1px;
+            background-color: lightblue;
+        }
+        
+        .menu li.active {
+            color: white;
+            background-color: darkblue;
+        }
+        
+        .clearfix::after{
+            content: "";
+            display:table;
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu clearfix">
+                <li class="active"><a>Eerste item</a></li>
+                <li><a>Tweede item</a></li>
+                <li><a>Derde item</a></li>
+                <li><a>Vierde item</a></li>
+                <li><a>Vijfde item</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>Be careful, or I will spill the beans on your placeholder text. We are going to make placeholder text great again. Greater
+        than ever before.</p>
+</body>
+
+</html>

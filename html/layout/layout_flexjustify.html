@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Justify (main axis)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container{
+                display: flex;
+                justify-content: flex-start; /* default */
+                /*justify-content: flex-end;
+                justify-content: center;
+                justify-content: space-between;
+                justify-content: space-around; */
+            }
+            .child1 {
+                background: greenyellow;
+                height: 200px;
+                flex: 0 1 200px;
+            }
+            .child2 {
+                background: olive;
+                height: 200px;
+                flex: 0 1 200px;
+            }
+            .child3 {
+                background:burlywood;
+                height: 200px;
+                flex: 0 1 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <item class="child1">een</item>
+            <item class="child2">twee</item>
+            <item class="child3">drie</item>
+        </div>
+    </body>
+</html>
