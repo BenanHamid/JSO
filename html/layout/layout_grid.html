@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Grid</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html{
+                background: lightgray;
+            }
+            body{
+                margin: 0 auto;
+                max-width: 1024px;
+                min-height: 100vh;
+                display: grid;
+                grid-template-areas: "header header"
+                                    "aside main"
+                                    "footer footer";
+                grid-template-columns: 150px 1fr;
+                grid-template-rows: auto 1fr auto;
+                background: whitesmoke;
+            }
+            #page-header{
+                grid-area: header;
+            }
+            #left-sidebar{
+                grid-area: aside;
+            }
+            #main{
+                grid-area: main;
+            }
+            #page-footer{
+                grid-area: footer;
+            }
+            .border{
+                border: 1px solid brown;
+                background-clip: padding-box;
+                border-radius: 10px;
+            }
+            .content-padding{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body class="border">
+        <header id="page-header" class="content-padding">
+                Nunc lorem ipsum, sollicitudin et lacinia placerat, tincidunt ut est. Mauris rhoncus felis tristique, cursus massa vitae, hendrerit ipsum. Proin malesuada euismod ullamcorper. Donec ac eros tellus. Donec sit amet tortor eget nunc pulvinar facilisis nec pellentesque tellus. In congue dignissim mauris id dictum. Duis pretium tincidunt viverra. Donec vestibulum venenatis quam, sed molestie odio imperdiet vitae. Etiam consectetur lorem ac enim convallis, vitae cursus massa sollicitudin. Mauris vulputate interdum nisi ac dapibus. Fusce vel erat ac lacus elementum commodo. Sed ut sapien ligula. Vestibulum tellus mauris, pretium ut finibus ut, elementum id turpis.
+                
+                Aenean massa diam, pharetra quis pellentesque quis, dapibus quis leo. Nunc a viverra libero, et malesuada orci. Nullam eget facilisis risus. Vestibulum nec tincidunt metus, in pulvinar magna. Nulla semper viverra mollis. Proin dignissim pellentesque nulla in ornare. Suspendisse congue sed nunc sed lacinia.
+        </header>
+        <aside id="left-sidebar" class="content-padding">
+                Ut et mattis augue. Morbi orci enim, efficitur posuere neque id, placerat rutrum leo. In sed diam ut tellus tristique vestibulum ut id odio. Nulla efficitur sollicitudin est lobortis tincidunt. Duis nunc velit, mollis a tristique in, sagittis vulputate massa. Aliquam ut est accumsan, sollicitudin lectus a, condimentum turpis. Nunc at lectus et mauris semper sollicitudin.
+        </aside>
+        <main id="main" class="content-padding">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tellus est, condimentum eu convallis et, vehicula ac massa. Sed mi arcu, euismod sed tortor ut, ultricies pharetra mi. Sed pharetra varius lectus, vitae mollis ante tempus nec. Curabitur convallis semper ipsum, eu dictum velit congue id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin eleifend ipsum vitae metus euismod pharetra. Curabitur auctor nibh leo, nec venenatis urna vestibulum id. Donec pulvinar nulla eros, varius placerat sapien ornare sit amet. Nunc ac erat a leo feugiat commodo sit amet at lectus. In cursus vestibulum justo, nec vestibulum nulla pulvinar et. Duis porttitor velit vel lacus viverra imperdiet. Donec vestibulum porta ligula in vestibulum.
+                
+                Ut et mattis augue. Morbi orci enim, efficitur posuere neque id, placerat rutrum leo. In sed diam ut tellus tristique vestibulum ut id odio. Nulla efficitur sollicitudin est lobortis tincidunt. Duis nunc velit, mollis a tristique in, sagittis vulputate massa. Aliquam ut est accumsan, sollicitudin lectus a, condimentum turpis. Nunc at lectus et mauris semper sollicitudin.
+                
+                <!-- Nullam sit amet tincidunt dui. Proin semper dictum nibh, non pretium dolor tristique ut. Mauris aliquam mauris sapien, quis ullamcorper ipsum viverra vel. Aliquam aliquet quam purus, vitae sodales augue dignissim vel. Nullam ullamcorper felis id libero varius, at hendrerit orci faucibus. In volutpat magna eu ipsum egestas tempus. Duis lorem est, euismod sodales aliquet non, laoreet sit amet dolor. Aenean elit arcu, cursus quis dui nec, vestibulum sagittis dolor. Nunc rhoncus ligula quis efficitur varius. Maecenas tincidunt eu eros in malesuada. Cras vel magna eget tortor lacinia molestie. Integer enim orci, condimentum a lacinia at, efficitur in erat. In euismod maximus diam, ut aliquam elit pretium id. Nullam ullamcorper neque molestie imperdiet pretium. Morbi vulputate orci at justo interdum blandit. In hac habitasse platea dictumst.
+                
+               Nunc lorem ipsum, sollicitudin et lacinia placerat, tincidunt ut est. Mauris rhoncus felis tristique, cursus massa vitae, hendrerit ipsum. Proin malesuada euismod ullamcorper. Donec ac eros tellus. Donec sit amet tortor eget nunc pulvinar facilisis nec pellentesque tellus. In congue dignissim mauris id dictum. Duis pretium tincidunt viverra. Donec vestibulum venenatis quam, sed molestie odio imperdiet vitae. Etiam consectetur lorem ac enim convallis, vitae cursus massa sollicitudin. Mauris vulputate interdum nisi ac dapibus. Fusce vel erat ac lacus elementum commodo. Sed ut sapien ligula. Vestibulum tellus mauris, pretium ut finibus ut, elementum id turpis.
+                
+                Aenean massa diam, pharetra quis pellentesque quis, dapibus quis leo. Nunc a viverra libero, et malesuada orci. Nullam eget facilisis risus. Vestibulum nec tincidunt metus, in pulvinar magna. Nulla semper viverra mollis. Proin dignissim pellentesque nulla in ornare. Suspendisse congue sed nunc sed lacinia.
+               -->
+        </main>
+        <footer id="page-footer" class="content-padding">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus interdum tortor ut congue. Cras lacus dui, sollicitudin sit amet ultrices ac, pharetra non eros. Quisque in congue ipsum, vel facilisis neque. Sed non porta arcu. Aenean varius arcu leo, facilisis pellentesque quam dapibus a. Maecenas faucibus posuere lorem, ac dapibus ipsum semper nec. Sed mattis sed enim a mattis. Quisque luctus, risus id elementum auctor, enim libero auctor leo, et sollicitudin tortor velit in diam. Etiam sed justo eu justo sollicitudin efficitur. Etiam euismod ex ac risus rhoncus tempus ut ut ipsum. Proin lacinia ligula in justo bibendum, eu porta nisi pretium. Sed suscipit facilisis varius.
+        </footer>
+    </body>
+</html>

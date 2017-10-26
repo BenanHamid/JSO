@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Flex align items</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .parent{
+                display: flex;
+                height: 100vh; /* 100% van de viewport */
+                align-items: flex-start; /* default */
+                /*align-items: flex-end;
+                align-items: center;
+                align-items: baseline;*/
+            }
+            .item{
+                flex: 0 1 200px;
+                height: 100px;
+            }
+            .item:first-child{
+                background: greenyellow;
+                font-size: 2rem;
+            }
+            .item:nth-child(2){
+                background: mediumturquoise;
+                align-self: flex-end;
+            }
+            .item:last-child{
+                background: red;
+                font-size: 3rem;
+            }
+            </style>        
+    </head>
+    <body>
+        <div class="parent">
+            <div class="item">een</div>
+            <div class="item">twee</div>
+            <div class="item">drie</div>
+        </div>
+    </body>
+</html>
