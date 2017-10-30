@@ -1,0 +1,53 @@
+body {
+    background: ivory;
+}
+
+h1 {
+    background: crimson;
+    color: ivory;
+    padding: 10px;
+}
+
+p {
+    background: coral;
+    padding: 8px;
+}
+
+.links {
+    background: none;
+}
+
+.eerste {
+    background: burlywood;
+}
+
+.eerste > em { 
+    text-decoration: underline;
+}
+
+a { 
+    text-decoration: none
+}
+
+a[href^="http://"]::after,
+a[href^="https://"] {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
+    margin: 0 0 0 5px;
+}
+
+a:link {
+    color: mediumvioletred;
+}
+
+a:visited {
+    color: sienna;
+}
+
+a:hover { 
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+a:active {
+    color:blanchedalmond;
+}
