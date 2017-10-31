@@ -119,8 +119,8 @@ function bonusMalusTrap(huidige, ongevallen) {
         newHuidig = huidige + 2
     } else if (ongevallen > 1) {
         newHuidig = huidige + (3*ongevallen)
-    } else if (ongevallen < -0) {
-        newHuidig = huidige - (1*ongevallen)
+    } else if (ongevallen < 0) {
+        newHuidig = huidige - ongevallen;
     }
 
     if (newHuidig > 18) {
