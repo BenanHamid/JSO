@@ -14,7 +14,6 @@ function geefGetal(getal) {
     tweedeGetal *= bovengrens;
     tweedeGetal = Math.floor(1 + tweedeGetal);
     console.log('Tweede getal is: ' + tweedeGetal);
-    return;
 }
 
 geefGetal();
@@ -46,13 +45,13 @@ function toonMeldingBijUitkomst(x) {
 }
 */
 var antwoord = 0;
-var uitkomst;
+var resultaat;
 
 function toonMeldingBijUitkomst(x) {
     for (var i = 1; i <= 10; i++) {
         var getal1;
         var getal2; 
-        uitkomst = parseInt(toetsenbord.question(eerstGetal + " * " + tweedeGetal + "= ? ")); 
+        resultaat = parseInt(toetsenbord.question(eerstGetal + " * " + tweedeGetal + "= ? ")); 
         var isJuist = evalueerProduct(eerstGetal, tweedeGetal, uitkomst);       
         if (x == true) {
             antwoord++
