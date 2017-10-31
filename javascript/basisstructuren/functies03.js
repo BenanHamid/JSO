@@ -19,7 +19,7 @@ tekenHuisje();
 // zijde te tekenen
 
 function tekenVierkant(zijde) {
-    var resultaat = '';
+    var resultaat;
     for (var rij = 1; rij <= zijde; rij++) {
         resultaat = '';
         for (var i = 1; i <= zijde; i++) {
@@ -31,4 +31,4 @@ function tekenVierkant(zijde) {
 }
 
 tekenVierkant(4);
-tekenVierkant(10);
+tekenVierkant(3);
