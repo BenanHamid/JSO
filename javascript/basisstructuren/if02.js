@@ -2,7 +2,7 @@
 
 var datum = new Date(); // дата
 var uur = datum.getHours(); // час
-if (uur === '9') { // http://www.c-point.com/javascript_tutorial/jsgrpComparison.htm
+if (uur == '10') { // http://www.c-point.com/javascript_tutorial/jsgrpComparison.htm
 	// == '9' ще работи, защото скрипта го конвертира в числото 9
 	// === гледа дали са от един и същ тип, тоест число и число, а не както е при == скрипта го конвертира автоматично към число
 	console.log("Tussen 9 en 10 kan je eens naar koffie zien");

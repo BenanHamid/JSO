@@ -1,6 +1,6 @@
-'use strict';
+//'use strict';
 
-var getal = 0;
+var getal = 0; // фунцкиите имат достъп до глобалните променливи
 
 function verhoogGlobaleVar() {
     // een functie heeft toegang tot de globale variabelen
@@ -13,7 +13,7 @@ for (var i = 0; i < 5; i++) {
     console.log(getal);
 }
 
-/*
+
 function fieMetLokaleVar(){
     // een functie kan lokale var declareren, d.i.
     // var die enkel in de fie gekend zijn
@@ -21,16 +21,16 @@ function fieMetLokaleVar(){
     // will. getal ts 0 (incl) en 1 (excl)
     var lokaal = Math.random();  // kommagetal tussen 0 en 1
     lokaal *= 100;
-    lokaal = Math.floor(lokaal);
+    lokaal = Math.floor(lokaal); // връща цяло число ??
     console.log("in de fie heeft lokaal waarde %d", lokaal);
 }
 
 fieMetLokaleVar();
-// console.log(lokaal);  // fout bij uitvoering; 
+// console.log(lokaal);  // fout bij uitvoering; // локалните променливи не са достъпни извън функцията
 // want een lokale var is niet gekend buiten de fie
-*/
 
-/*
+
+
 function fieMetNieuweGlobaleVar(){
     // dit kan enkel zonder 'use strict'!
     // als in een fie een toekenning aan een niet-gedecl var
@@ -43,4 +43,3 @@ function fieMetNieuweGlobaleVar(){
 
 fieMetNieuweGlobaleVar();
 console.log(globaal);
-*/
