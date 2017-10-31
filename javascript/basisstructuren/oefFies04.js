@@ -9,12 +9,12 @@ function geefGetal(bovengrens) {
 }
 
 function evalueerProduct(getal1, getal2, uitkomst) {
-	return getal1 * getal2 == uitkomst;
+	return getal1 * getal2 == uitkomst; // == voorwaarde
 }
 
 function toonMeldingBijUitkomst(juist) {
 	var antwoordnr = geefGetal(4);
-	if (juist) {
+	if (juist) { //juist == true
 		switch (antwoordnr) {
 			case 1: console.log("Goed zo !"); break;
 			case 2: console.log("Uitstekend !"); break;
@@ -55,7 +55,7 @@ for (teller = 1; teller <= 10; teller++) {
 	uitkomst = parseInt(toetsenbord.question("Hoeveel is " + getal1 + " x " + getal2 + "? "));
 	juist = evalueerProduct(getal1, getal2, uitkomst);
 	toonMeldingBijUitkomst(juist);
-	if (juist) {
+	if (juist) { // juist == true
 		aantalJuist++;
 	}
 }

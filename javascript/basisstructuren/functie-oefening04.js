@@ -1,70 +1,34 @@
 'use strict'; //трябва да се дооправи
 
-var eerstGetal = Math.random();
-var tweedeGetal = Math.random();
+var maxGetal, getal1, getal2, resultaat, antwoord = 0
 
 var toetsenbord = require('readline-sync');
-var bovengrens = parseInt(toetsenbord.question('Tik de bovengrens in: '));
 
-function geefGetal(getal) {
-    eerstGetal *= bovengrens;
-    eerstGetal = Math.floor(1 + eerstGetal);
-    console.log('Eerste getal is: ' + eerstGetal);
-    
-    tweedeGetal *= bovengrens;
-    tweedeGetal = Math.floor(1 + tweedeGetal);
-    console.log('Tweede getal is: ' + tweedeGetal);
+function geefGetal(bovengrens) {
+    var getal = Math.random();
+    getal *= bovengrens;
+    getal = Math.floor(1 + getal);
+    return getal;
 }
 
-geefGetal();
-console.log(eerstGetal * tweedeGetal);
-
-var a = eerstGetal;
-var b = tweedeGetal;
-var derdeGetal = toetsenbord.question('Tik het product in: ');
-var c = derdeGetal;
-
-function evalueerProduct(a, b, c) {
-    if (a * b == c) {
+function evalueerProduct(getal1, getal2, bovengrens) {
+    if (getal1 * getal2 == resultaat) {
         return true
     } else {
         return false
     }
 }
 
-var isJuist = evalueerProduct(a, b, c);
-console.log(isJuist);
+var isJuist = evalueerProduct(getal1, getal2, resultaat);
 
-/*
-function toonMeldingBijUitkomst(x) {
-    if (x == true) {
+var x;
+function toonMeldingBijUitkomst(isJuist) {
+    if (isJuist == true) {
         console.log('Juist');
     } else {
         console.log('Fout');
     }
 }
-*/
-var antwoord = 0;
-var resultaat;
-
-function toonMeldingBijUitkomst(x) {
-    for (var i = 1; i <= 10; i++) {
-        var getal1;
-        var getal2; 
-        resultaat = parseInt(toetsenbord.question(eerstGetal + " * " + tweedeGetal + "= ? ")); 
-        var isJuist = evalueerProduct(eerstGetal, tweedeGetal, uitkomst);       
-        if (x == true) {
-            antwoord++
-            console.log('Juist');
-        } else {
-            console.log('Fout');
-        }
-    }
-}
-
-toonMeldingBijUitkomst(isJuist);
-
-var y = antwoord;
 
 function toonMeldingBijTotaal(y) {
     switch (y) {
@@ -94,3 +58,19 @@ function toonMeldingBijTotaal(y) {
 }
 
 toonMeldingBijTotaal(antwoord);
+
+var y = antwoord;
+var bovengrens = parseInt(toetsenbord.question('Tik de bovengrens in: '));
+for (var i = 1; i <= 10; i++) {
+    var getal1 = geefGetal(bovengrens);;
+    var getal2 = geefGetal(bovengrens);;
+    resultaat = parseInt(toetsenbord.question(getal1 + " * " + getal2 + "= ? "));
+    var isJuist = evalueerProduct(getal1, getal2, resultaat);
+    if (isJuist == true) {
+        antwoord++
+        console.log('Juist');
+    } else {
+        console.log('Fout');
+    }
+}
+console.log("Je hebt %d op 10", antwoord);

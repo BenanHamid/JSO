@@ -1,6 +1,6 @@
 'use strict';
 
-var toetsenbord = require('readline-sync');
+var toetsenbord = require('readline-sync'); 
 var getal = toetsenbord.question('Tik een getal in: ');
 /*
 // wat doet onderstaand script? //изчисляване на факториел? 
