@@ -124,7 +124,7 @@ function bonusMalusTrap(huidige, ongevallen) {
     }
 
     if (newHuidig > 18) {
-        console.log('Je bonus-malus trap is nu/over 18! Je moet een andere verzekeringsmaatschappij zoeken');
+        console.log('Je bonus-malus trap is nu/over 18! Je moet een andere verzekeringsmaatschappij zoeken!');
     } else if(newHuidig < 18){
         console.log('Je niuewe bonus-malus is: ' + newHuidig);
     }
