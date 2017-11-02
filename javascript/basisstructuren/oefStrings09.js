@@ -16,12 +16,9 @@ function geslacht(rrn) {
 
 function geboorteJaarInVierCijfers(rrn) {
     var geboorteDatumEnVolgnr = rrn.substr(0, 6)+rrn.substr(7,3);
-    console.log(geboorteDatumEnVolgnr)
     var geboorteJaar = parseInt(rrn.substr(0, 2));
     var controleCijfers = parseInt(rrn.substr(11, 2));
     var controleCijfersVoor2000 = 97 - (geboorteDatumEnVolgnr % 97);
-    console.log(controleCijfers)
-    console.log(controleCijfersVoor2000)
     if (controleCijfers == controleCijfersVoor2000) {
         return 1900 + geboorteJaar;
     }
@@ -39,8 +36,6 @@ function leeftijd(rrn) {
     var geboorteDag = parseInt(rrn.substr(4, 2));
     var geboorteGetal = geboorteJaar * 10000 + geboorteMaand * 100 + geboorteDag;
     var vandaagGetal = huidigJaar * 10000 + huidigeMaand * 100 + huidigeDag;
-    console.log(vandaagGetal)
-    console.log(geboorteGetal)
     return Math.floor((vandaagGetal - geboorteGetal) / 10000);
 }
 
