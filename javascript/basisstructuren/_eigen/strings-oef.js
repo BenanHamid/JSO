@@ -135,6 +135,8 @@ function geslacht(nummer){
     } else {
         console.log('Man');
     }
+
+    // return nummer % 2 == 0 ? "Vrouw" : "Man"
 }
 
 geslacht(splitRijks);
@@ -145,6 +147,6 @@ function leefTijd(leef){
     return jaar;
 }
 
-var verjaardag = new Date(1991, 08, 17);
+var verjaardag = new Date(07, 08, 17);
 var jaar = leefTijd(verjaardag)
 console.log(jaar);

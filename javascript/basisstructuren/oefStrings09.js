@@ -20,7 +20,7 @@ function geboorteJaarInVierCijfers(rrn) {
     var controleCijfers = parseInt(rrn.substr(11, 2));
     var controleCijfersVoor2000 = 97 - (geboorteDatumEnVolgnr % 97);
     if (controleCijfers == controleCijfersVoor2000) {
-        return 1900 + geboorteJaar;
+        return 1900 + geboorteJaar; // return спира функцията да се изпълнява по-нататък
     }
     return 2000 + geboorteJaar;
 
@@ -34,9 +34,9 @@ function leeftijd(rrn) {
     var geboorteJaar = geboorteJaarInVierCijfers(rrn);
     var geboorteMaand = parseInt(rrn.substr(2, 2));
     var geboorteDag = parseInt(rrn.substr(4, 2));
-    var geboorteGetal = geboorteJaar * 10000 + geboorteMaand * 100 + geboorteDag;
-    var vandaagGetal = huidigJaar * 10000 + huidigeMaand * 100 + huidigeDag;
-    return Math.floor((vandaagGetal - geboorteGetal) / 10000);
+    var geboorteGetal = geboorteJaar * 10000 + geboorteMaand * 100 + geboorteDag;  //!!!
+    var vandaagGetal = huidigJaar * 10000 + huidigeMaand * 100 + huidigeDag; //!!!
+    return Math.floor((vandaagGetal - geboorteGetal) / 10000); //!!!
 }
 
 var rijksregisterNummer = toetsenbord.question("rijksregisternummer: ");
