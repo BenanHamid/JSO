@@ -81,7 +81,8 @@ function aantalWoorden(str){
   var string = str.split(' ').length;
   console.log(string)
 }
-aantalWoorden('Ik drink bier\n');
+aantalWoorden('Ik drink bier');
+console.log();
 
 //9
 function belgischeNaam(naam){
@@ -125,15 +126,25 @@ console.log();
 
 //10
 
-var rijksRegisterNummer = '910817-289.32';
-var splitRijks = rijksRegisterNummer.split('.').pop().toString();
+var rijksRegisterNummer = '910817-291.32';
+var splitRijks = rijksRegisterNummer.substring(7,10);
 
 function geslacht(nummer){
     if (nummer % 2 == 0){
         console.log('Vrouw');
     } else {
-    console.log('Man');
-}
+        console.log('Man');
+    }
 }
 
 geslacht(splitRijks);
+
+function leefTijd(leef){
+    var vandaag = new Date();
+    var jaar = vandaag.getFullYear() - leef.getFullYear();
+    return jaar;
+}
+
+var verjaardag = new Date(1991, 08, 17);
+var jaar = leefTijd(verjaardag)
+console.log(jaar);
