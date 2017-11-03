@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form method="POST">
+        <p>
+            <label>Naam:<br>
+                <input type="text" required name="txtNaam" placeholder="Vul je naam in:" required/>
+            </label>
+        </p>
+        <p>
+            <label>Gebortedatum:<br>
+                <input name="gebDatum" placeholder="Vul je gebortedatum in:" type="date"/>
+            </label>
+        </p>
+        <p>Heb je een rijbewijs B?<br>
+            <label><input type="checkbox" name="rijbewijs" value="ja" checked/>Ja</label>
+            <label><input type="checkbox" name="rijbewijs" value="nee" />Nee</label>
+        </p>
+        <p>
+            Hoe goed is je Nederlands?<br>
+            <label><input type="radio" name="nederlands" value="goed" required checked/>Goed</label>
+            <label><input type="radio" name="nederlands" value="middelmatig" />Middelmatig</label>
+            <label><input type="radio" name="nederlands" value="slecht" />Slecht</label>
+        </p>
+        <p>Beschrijving :<br>
+            <label>
+                <textarea name="beschrijving" placeholder="Geef een korte beschrijving van jezelf" cols="30" rows="5"></textarea>
+            </label>
+        </p>
+        <p>
+            <label>Postcode:<br>
+                <input type="number" placeholder="Vul je postcode in:" pattern="\d{4}" name="postcode" />
+            </label>
+        </p>
+        <input type="submit" name="btn" value="Verzenden" />
+        </p>
+    </form>
+</body>
+</html>
