@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fieldset, legend en range</title>
+</head>
+<body>  
+    <form method="GET">
+        <fieldset>
+            <legend>Haar</legend>
+           <label>Kleur:<input name="haarkleur" type="color"/> </label>
+           <label>Lengte:<select name="haarlengte">
+               <option value="kort">Kort</option>
+               <option value="halflang">Half lang</option>
+               <option value="lang">Lang</option>
+               </select></label> 
+        </fieldset>
+        <fieldset>
+            <legend>Karakter</legend>
+           <label>onsympathiek<input type="range" min="1" max="10" step="1" name="karakter"/> heel sympathiek</label> 
+        </fieldset>
+        <input type="submit" name="btn" value="Verzenden"/></p>
+    </form>
+</body>
+</html>
