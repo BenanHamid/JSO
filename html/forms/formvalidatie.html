@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validatie</title>
+    <style>
+       input:required{
+           border-color: red;
+           border-width: 2px;
+       }
+       input[type="number"]:invalid, input[pattern]:invalid{
+           background-color: fuchsia;
+       }
+    </style>
+</head>
+<body>  
+    <form method="GET">
+        <p><label>Naam: <input type="text" required name="txtNaam"/></label></p>
+        <p><label>Aantal: <input type="number" min="1" max="5" name="txtAantal"/></label></p>
+        <p><label>Postnummer: <input type="text" pattern="\d{4}" name="txtPostnr"/></label></p>
+        <input type="submit" name="btn" value="Verzenden"/></p>
+    </form>
+</body>
+</html>
