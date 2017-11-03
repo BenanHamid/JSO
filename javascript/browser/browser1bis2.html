@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eerste document (v2_2)</title>
+</head>
+<body>
+<h1>JavaScript in een browser - 1bis2</h1>
+<!-- for contenttype xhtml+xml, 
+ if your code contains  "special" xml characters s.a. < and &
+ you can work around this with CDATA sections --> 
+<!--  the CDATA section can be couched within comments so as to be able to work in either 
+application/xhtml+xml or text/html -->
+<!-- And if you really need compatibility with very old browsers that do not recognize 
+the script tags resulting in their contents displayed on the page, you can use this: -->
+<script>
+<!--//--><![CDATA[//><!--
+    alert("Dag");
+//--><!]]>
+</script>
+</script>
+</body>
+</html>
