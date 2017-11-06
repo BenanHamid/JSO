@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Zevende voorbeeld</title>
+<script type="text/javascript">
+	function invoerVragen(){
+		var naam = prompt("Geef naam","je naam");
+		if (naam != null){
+			// OK geklikt
+			var naamOk = confirm("Heet je echt " + naam + "?");
+			if (naamOk){
+				// OK geklikt
+				alert("Welkom, "+naam);
+			}
+		}
+	}
+</script>
+</head>
+
+<body onload="invoerVragen()">
+<h1>VB 7</h1>
+<p>Alle dialoogvensters 'blokkeren' het script en gaan pas verder als de gebruiker het venster gesloten heeft.</p>
+<p>Gebruik <code>alert</code> om een melding te tonen.  Het resultaat van deze functie is altijd <code>undefined</code>.</p>
+<p>Gebruik <code>prompt</code> om invoer te vragen aan de gebruiker.  Als de gebruiker op de OK-knop klikt, is het resultaat van deze functie de ingetikte waarde.  Als de gebruiker op de cancel-knop klikt, is het resultaat van deze functie <code>null</code>.</p>
+<p>Gebruik <code>confirm</code> om bevestiging te vragen aan de gebruiker.  Als de gebruiker op de OK-knop klikt, is het resultaat van deze functie <code>true</code>.  Als de gebruiker op de cancel-knop klikt, is het resultaat van deze functie <code>false</code>.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Elementen in form aanspreken</title>
+<script type="text/javascript" >
+'use strict';
+function toonNaamZonderParams() {
+    var naam = frm.naamVeld.value;
+    if (naam == "") naam = " vreemdeling";
+    alert("Dag " + naam);
+}
+
+function init(){
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click", toonNaamZonderParams);
+}
+
+window.onload = init;
+</script>
+</head>
+<body>
+<form name="frm">
+Naam: <input type="text" name="naamVeld" />
+<input type="button" value="klik" id="btn"/>
+</form>
+</body>
+</html>
