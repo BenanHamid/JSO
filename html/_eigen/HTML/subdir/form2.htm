@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{box-sizing: border-box;}
+        body {
+            max-width: 1000px;
+            margin: auto;
+            padding: 1em;
+        }
+        #form {
+            display: flex;
+            flex-flow: wrap;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+
+        form > div {
+            flex: 1;
+            min-width: 0;
+        }
+        .text, .input {
+            margin-top:20px;
+        }
+        .text {
+            
+            min-width: 190px;
+            margin-right: 20px;
+        }
+        .input {
+            
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <div>
+            <label><div class="text">Naam:</div>
+            <div class="input"><input type="text" required name="txtNaam" placeholder="Vul je naam in:" required/></div></label>
+        </div>
+
+        <div>
+            <label><div class="text">Gebortedatum:</div>
+            <div class="input"><input name="gebDatum" placeholder="Vul je gebortedatum in:" type="date"/></div></label>
+        </div>
+
+        <div>
+            <label><div class="text">Rijbewijs</div>
+            <div class="input"><input type="checkbox" name="rijbewijs" value="ja" checked/>B</label></div>
+        </div>
+
+        <div>
+            <div class="text">Hoe goed is je Nederlands?</div>
+            <div class="input"><label><input type="radio" name="nederlands" value="goed" required checked/>Goed</label><br>
+            <label><input type="radio" name="nederlands" value="middelmatig" />Middelmatig</label><br>
+            <label><input type="radio" name="nederlands" value="slecht" />Slecht</label></div>
+        </div>
+
+        <div>
+            <label>
+            <div class="text">Beschrijving :</div>
+            <div class="input"><textarea name="beschrijving" placeholder="Geef een korte beschrijving van jezelf" cols="30" rows="5"></textarea></div>
+            </label>
+        </div>
+
+        <div>
+            <label><div class="text">Postcode:</div><div class="input"><input type="number" placeholder="Vul je postcode in:" pattern="\d{4}" name="postcode" /></div>
+            </label>
+        </div>
+        <div>
+            <div class="text"><input type="submit" name="btn" value="Verzenden" /></div>
+        </div>
+    </form>
+</body>
+</html>
