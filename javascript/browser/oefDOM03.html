@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oefening DOM 3</title>
+<script>
+function naarEuro(){
+   var bedragBEF=parseFloat(frmTekst.txtBEF.value);
+   frmTekst.txtEUR.value = bedragBEF / 40.3399;
+}
+function naarBEF(){
+   var bedragEUR=parseFloat(frmTekst.txtEUR.value);
+   frmTekst.txtBEF.value = bedragEUR * 40.3399;
+}
+function init(){
+    var btnNaarEuro = document.getElementById("btnNaarEuro");
+    var btnNaarBEF =  document.getElementById("btnNaarBEF");
+    btnNaarEuro.onclick = naarEuro;
+    btnNaarBEF.onclick = naarBEF;
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<form name="frmTekst">
+    <input type="number" name="txtBEF" value="0"/>
+    <input type="button" value="naarEuro =>" id = "btnNaarEuro"/>
+    <input type="button" value="<= naarBEF"  id="btnNaarBEF"/>
+    <input type="number" name="txtEUR" value="0"/>
+</form>
+</body>
+</html>
