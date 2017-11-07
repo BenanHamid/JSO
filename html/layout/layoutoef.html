@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sollicitatie</title>
+    <link rel="stylesheet" href="grid.css">
+    <!--<link rel="stylesheet" href="flex.css">-->
+    <!--<link rel="stylesheet" href="float.css">-->
+</head>
+
+<body>
+    <form class="formcontainer" action="sollicitatie.php" method="POST">
+        <label class="formlabel" for="txtNaam">Naam:</label>
+        <input class="forminput" type="text" name="txtNaam" required id="txtNaam">
+        <label class="formlabel" for="gebDatum">Geboortedatum: </label>
+        <input class="forminput" name="gebDatum" type="date" id="gebDatum" />
+        <label class="formlabel">Rijbewijs</label><label class="forminput">
+            <input type="checkbox" name="rijbewijs">Ik heb een rijbewijs B</label>
+        <label class="formlabel">Hoe goed is je Nederlands?</label>
+        <div class="form-radiogroup">
+            <label>
+                <input type="radio" name="nederlands" value="goed" checked>Goed</label>
+            <label>
+                <input type="radio" name="nederlands" value="middelmatig">Middelmatig</label>
+            <label>
+                <input type="radio" name="nederlands" value="slecht">Slecht</label>
+        </div>
+        <label class="formlabel" for="beschrijving">Hoe zou je jezelf beschrijven? </label>
+        <textarea class="forminput" rows="10" name="beschrijving" id="beschrijving"></textarea>
+        <label class="formlabel" for="postcode">Postcode:</label>
+        <input class="forminput" type="text" placeholder="9999" name="postcode" maxlength="4" size="4" pattern="\d{4}" id="postcode">
+        <input class="formbutton" type="submit" name="btn" value="Verzenden">
+    </form>
+</body>
+
+</html>

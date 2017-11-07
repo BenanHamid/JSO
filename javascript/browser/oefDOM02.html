@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>oefening DOM 2</title>
+<script>
+function berekenSom(){
+   var getal1 = parseInt(frmTekst.txtGetal1.value);
+   var getal2 = parseInt(frmTekst.txtGetal2.value);
+   frmTekst.txtSom.value = getal1 + getal2;
+}
+
+function init(){
+    var btn = document.getElementById("btn");
+    btn.onclick = berekenSom;
+}
+
+window.onload = init;
+</script>
+</head>
+<body>
+<form name="frmTekst">
+ <input type="number" name="txtGetal1" value="0"/>+
+ <input type="number" name="txtGetal2" value="0"/>
+ <input type="button" value="=" id="btn"/>
+ <input type="number" name="txtSom"  readonly/>
+</form>
+</body>
+
+</html>

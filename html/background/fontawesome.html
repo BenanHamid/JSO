@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Font-awesome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navigation{
+            width: 375px;
+        }
+        .menu{
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 112px 112px 112px;
+            grid-template-columns:112px 112px 112px;
+            list-style: none;
+            border-bottom:2px solid black;
+            padding-left: 0px;
+            margin-left: 40px;
+        }
+        .menu_item{
+            margin: 0 5px;
+            height: 30px;
+            padding-left: 5px;
+            background-color: aquamarine;
+            position: relative;
+            border: 2px solid black;
+            border-bottom: none;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .menu_item > .fa{
+            position:absolute;
+            right: 5px;
+            top: 5px;
+        }
+        .menu_item > a{
+            position: relative;
+            top: 5px;
+            text-decoration: none;
+        }
+        .menu_item_youtube{
+            -ms-grid-column: 2; /* -ms-grid vult de opeenvolgende cellen niet automatisch */
+            grid-column: 2;
+        }
+        .menu_item_linkedin{
+            -ms-grid-column:3;
+            grid-column: 3;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu_item menu_item_facebook"><a href="www.facebook.com">Facebook</a><i class="fa fa-facebook"></i></li>
+                <li class="menu_item menu_item_youtube"><a href="www.youtube.com">Youtube</a><i class="fa fa-youtube"></i></li>
+                <li class="menu_item menu_item_linkedin"><a href="www.linkedin.com">Linkedin</a><i class="fa fa-linkedin"></i></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
