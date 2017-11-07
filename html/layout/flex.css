@@ -1,0 +1,20 @@
+.formcontainer{
+    width: 400px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.formlabel, .forminput{
+    box-sizing: border-box;
+    flex: 0 1 50%;
+    margin-bottom: 5px;
+}
+.formlabel{
+    text-align: right;
+    padding-right: 5px;
+}
+.form-radiogroup > label{
+    display: block;
+}
+.formbutton{
+    margin-left: 50%;
+}
