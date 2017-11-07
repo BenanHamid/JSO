@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            'use script';
+            function getal(){
+                /*var btn = frm.btn
+                btn.onclick = result*/
+                frm.btn.onclick = result
+            }
+
+            function result(){
+                frm.result.value = parseFloat(frm.eerste.value, 10) + parseFloat(frm.tweede.value, 10)
+            }
+
+            window.onload = getal;
+        </script>
+    </head>
+    <body>
+        <form name="frm">
+            <input type="number" name="eerste"> +
+            <input type="number" name="tweede">
+            <input type="button" name="btn" value="=">
+            <input type="text" name="result" readonly>
+        </form>
+    </body>
+</html>

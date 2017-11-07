@@ -21,6 +21,7 @@ function toonNaamZonderParams() {
     var naam = frm.naamVeld.value;
     if (naam == "") naam = " vreemdeling";
     alert("Dag " + naam);
+    frm.naamVeld.value = 'smurf'
 }
 
 </script>
@@ -29,8 +30,8 @@ function toonNaamZonderParams() {
 <form name="frm">
 Naam: <input type="text" name="naamVeld" />
 <!-- unobtrusive (JavaScript en html door elkaar) -->
-<!-- <input type="button" value="klik" onclick="toonNaam(this.form);" /> -->
-<input type="button" value="klik" onclick="toonNaamZonderParams();" />
+<input type="button" value="klik" onclick="toonNaam(this.form);" />
+<!-- <input type="button" value="klik" onclick="toonNaamZonderParams();" /> -->
 </form>
 </body>
 </html>

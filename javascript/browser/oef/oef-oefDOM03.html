@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            'use script';
+
+            const BEF = 40.3399
+
+            function button(){
+                var euro = document.getElementById('naareuro');
+                var bef = document.getElementById('naarbef');
+                btn1.onclick = cake;
+                btn2.onclick = cake;
+            }
+            
+            function naarEuro(){
+            }
+
+            function euroNaarBef() {
+                eurobef = euro * BEF;
+            }
+
+            function befNaarEuro() {
+                befeuro = euro / frm.btn2;
+            }
+
+            window.onload = cake;
+        </script>
+    </head>
+    <body>
+        <form name="frm">
+            <input type="number" name="euro" value="0">
+            <input type="button" name="btn1" value="naarEuro" id="naareuro">
+            <input type="button" name="btn2" value="naarBEF" id="naarbef">
+            <input type="number" name="bef" value="0">
+        </form>
+    </body>
+</html>

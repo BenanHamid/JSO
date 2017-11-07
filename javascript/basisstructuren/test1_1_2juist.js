@@ -8,7 +8,7 @@ while(a<10){
 }
 
 // dit script zou de getallen van 10 tem 15 op het scherm moeten tonen
-for(var b=0; b<=5; b++){
+for(var b=0; b<=5; b++){ //
     console.log(10+b);
 }    
 
@@ -30,7 +30,7 @@ a = 1;
 do{
     console.log(a, "wordt verwerkt");
     a += 1;
-}while (a%7!=0  && a <= 20);
+}while (a%7!=0  && a <= 20); // of - &&
 
 // dit script zou een lijn met 25 sterretjes op het scherm moeten tonen
 function sterretjes(){

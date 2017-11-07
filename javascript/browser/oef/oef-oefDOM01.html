@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            'use strict';
+            
+            function copy(){
+                frm.sbt.value = frm.fbt.value                
+            }
+
+            function cake(){
+                var btn = frm.btn
+                //  var btn = document.getElementById('btn'); 
+                btn.onclick = copy;
+            }
+
+            window.onload = cake;
+        </script>
+    </head>
+    <body>
+        <form name="frm">
+            <input type="text" name="fbt">
+            <input type="button" value="Copy" name="btn" id="btn">
+            <input type="text" name="sbt">
+        </form>
+    </body>
+</html>
