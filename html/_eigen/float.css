@@ -1,0 +1,28 @@
+* {box-sizing: border-box}
+
+.formcontainer {
+    width: 400px;
+    overflow: hidden;
+}
+
+.formlabel { 
+    width: 50%;
+    float:left;
+}
+
+.forminput {
+    width: 50%;
+}
+
+.form-radiogroup {
+    width: 50%;
+    float:left;
+}
+
+.form-radiogroup > label {
+    display: block;
+}
+
+.formbutton {
+    margin-left:50%;
+}

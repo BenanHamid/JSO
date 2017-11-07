@@ -1,0 +1,22 @@
+* {box-sizing: border-box}
+
+.formcontainer {
+    display:grid;
+    width: 400px;
+    grid-template-columns: 200px 200px;
+    grid-row-gap: 10px;
+}
+
+.formlabel {
+    text-align: right;
+    padding: 0 10px 0 0;
+}
+
+.form-radiogroup{
+    display: grid;
+}
+
+
+.formbutton { 
+    grid-column: 2/3;
+}
