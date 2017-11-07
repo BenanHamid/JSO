@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Elementen in form aanspreken</title>
+<script type="text/javascript" >
+'use strict';
+
+function toonNaam(form){
+	var naam = form.naamVeld.value;
+	if (naam == "") naam = " vreemdeling";
+	alert("Dag "+naam);
+}
+
+function toonNaamZonderParams2() {
+    var naam = document.forms[0].naamVeld.value;
+    if (naam == "") naam = " vreemdeling";
+    alert("Dag " + naam);
+}
+
+function toonNaamZonderParams() {
+    var naam = frm.naamVeld.value;
+    if (naam == "") naam = " vreemdeling";
+    alert("Dag " + naam);
+}
+
+</script>
+</head>
+<body>
+<form name="frm">
+Naam: <input type="text" name="naamVeld" />
+<!-- unobtrusive (JavaScript en html door elkaar) -->
+<!-- <input type="button" value="klik" onclick="toonNaam(this.form);" /> -->
+<input type="button" value="klik" onclick="toonNaamZonderParams();" />
+</form>
+</body>
+</html>

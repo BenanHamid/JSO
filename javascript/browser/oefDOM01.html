@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>oefening DOM 1</title>
+	<script>
+        function kopieer(){
+            frmTekst.txtRechts.value = frmTekst.txtLinks.value;
+        }
+		function init(){
+			var btn = document.getElementById("btn");
+			btn.onclick = kopieer;
+		}
+		window.onload = init;
+    </script>
+</head>
+<body>
+	<form name="frmTekst">
+		<input type="text" name="txtLinks" />
+		<input type="button" value="kopieer" id="btn"/>
+		<input type="text" name="txtRechts" />
+	</form>
+</body>
+</html>
