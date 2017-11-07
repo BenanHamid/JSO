@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script>
-            'use script';
+<html>
 
-            const BEF = 40.3399
+<head>
+    <title>Oefening DOM 3</title>
+    <script>
+        'use strict';
 
-            function button(){
-                var euro = document.getElementById('naareuro');
-                var bef = document.getElementById('naarbef');
-                btn1.onclick = cake;
-                btn2.onclick = cake;
-            }
-            
-            function naarEuro(){
-            }
+        const BEF = 40.3399;
 
-            function euroNaarBef() {
-                eurobef = euro * BEF;
-            }
+        function naarEuro() {
+            var bedragBEF = parseFloat(frmTekst.txtBEF.value);
+            frmTekst.txtEUR.value = bedragBEF / BEF;
+        }
+        function naarBEF() {
+            var bedragEUR = parseFloat(frmTekst.txtEUR.value);
+            frmTekst.txtBEF.value = bedragEUR * BEF;
+        }
+        function cake() {
+            var naarEuro = document.getElementById("NaarEuro");
+            var naarBEF = document.getElementById("NaarBEF");
+            naarEuro.onclick = naarEuro;
+            naarBEF.onclick = naarBEF;
+        }
+        window.onload = cake;
+    </script>
+</head>
 
-            function befNaarEuro() {
-                befeuro = euro / frm.btn2;
-            }
+<body>
+    <form name="frmTekst">
+        <input type="number" name="txtBEF" value="0" />
+        <input type="button" value="naarEuro" id="NaarEuro" />
+        <input type="button" value="naarBEF" id="NaarBEF" />
+        <input type="number" name="txtEUR" value="0" />
+    </form>
+</body>
 
-            window.onload = cake;
-        </script>
-    </head>
-    <body>
-        <form name="frm">
-            <input type="number" name="euro" value="0">
-            <input type="button" name="btn1" value="naarEuro" id="naareuro">
-            <input type="button" name="btn2" value="naarBEF" id="naarbef">
-            <input type="number" name="bef" value="0">
-        </form>
-    </body>
 </html>
