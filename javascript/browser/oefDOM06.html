@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oefening DOM 6</title>
+<script>
+   function telOp(){
+     frmTekst.txtResultaat.value = parseInt(frmTekst.txtGetal1.value) +
+                                   parseInt(frmTekst.txtGetal2.value)
+   }
+   function berekenVerschil(){
+     frmTekst.txtResultaat.value = parseInt(frmTekst.txtGetal1.value) -
+                                   parseInt(frmTekst.txtGetal2.value)
+   }
+   function deel(){
+     frmTekst.txtResultaat.value = parseInt(frmTekst.txtGetal1.value) /
+                                   parseInt(frmTekst.txtGetal2.value)
+   }
+   function vermenigvuldig(){
+     frmTekst.txtResultaat.value = parseInt(frmTekst.txtGetal1.value) *
+                                   parseInt(frmTekst.txtGetal2.value)
+   }
+   function init(){
+     document.getElementById("btnPlus").onclick = telOp;
+     document.getElementById("btnMin").onclick = berekenVerschil;
+     document.getElementById("btnMaal").onclick = vermenigvuldig;
+     document.getElementById("btnDeel").onclick = deel;
+   }
+   window.onload = init;
+</script>
+</head>
+<body>
+<form name="frmTekst">
+<input type="number" name="txtGetal1" /><br />
+<input type="button" value="+" id="btnPlus" /><br />
+<input type="button" value="-" id="btnMin" /><br />
+<input type="button" value="/" id="btnDeel"><br />
+<input type="button" value="X" id="btnMaal" /><br />
+<input type="number" name="txtGetal2" /><br />
+= <br/>
+<input type="number" name="txtResultaat" readonly/><br />
+</form>
+</body>
+</html>
