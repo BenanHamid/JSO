@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oefening DOM 8</title>
+<script>
+var zoekGetal = Math.floor(Math.random()*100)+1;
+var pogingen = 0;
+function speel(){
+   var getal = parseInt(frmTekst.txtGetal.value);
+   if (isNaN(getal)){
+      alert("Dit is geen geldig getal");
+   }else{
+      pogingen++;
+      if (getal < zoekGetal){
+         alert("Hoger");
+      }else if (getal > zoekGetal){
+              alert("Lager");
+            }else{
+               frmTekst.txtResultaat.value="Juist in " + pogingen+
+                                           " pogingen";
+               frmTekst.btnSpeel.disabled = true;                            
+            }
+   }
+}
+function init(){
+  frmTekst.btnSpeel.onclick = speel;
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<form name="frmTekst">
+<input type="number" name="txtGetal" min="1" max="100"/><br />
+<input type="text" name="txtResultaat" readonly/><br />
+<input type="button" value="Speel" name="btnSpeel"/><br />
+</form>
+</body>
+</html>
