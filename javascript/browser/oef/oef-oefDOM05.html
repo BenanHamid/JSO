@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        'use strict';
+
+        function reverseString() {
+            var text = frm.tekst.value;
+            var copy = "";
+            for (var i = 0; i <= text.length; i++) {
+                copy = text.charAt(i) + copy;
+            }
+            frm.tekstreverse.value = copy;
+        }
+
+
+        function init() {
+            frm.btn.onclick = reverseString;
+        }
+
+        window.onload = init;
+    </script>
+</head>
+
+<body>
+    <form action="" name="frm">
+        <input type="text" name="tekst" value="belkin">
+        <input type="button" name="btn" value="Reverse">
+        <input type="text" name="tekstreverse" value="">
+    </form>
+</body>
+
+</html>

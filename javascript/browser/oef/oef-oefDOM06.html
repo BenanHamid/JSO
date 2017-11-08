@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+    'user strict';
+
+    var getal1 = frm.eersteGetal.value
+    
+    function optel() {
+        frm.resultaat.value = parseFloat(frm.eersteGetal.value) + parseFloat(frm.tweedeGetal.value)
+    }
+
+    function aftrek() {
+        frm.resultaat.value = parseFloat(frm.eersteGetal.value) - parseFloat(frm.tweedeGetal.value)
+    }
+
+    function vermenig() {
+        frm.resultaat.value = parseFloat(frm.eersteGetal.value) * parseFloat(frm.tweedeGetal.value)
+    }
+    function del() {
+        frm.resultaat.value = parseFloat(frm.eersteGetal.value) / parseFloat(frm.tweedeGetal.value)
+    }
+
+    function init() {
+        frm.optelling.addEventListener("click", optel);
+        frm.aftrekking.addEventListener("click", aftrek);
+        frm.vermenigvuldiging.addEventListener("click", vermenig);
+        frm.deling.addEventListener("click", del);
+    }
+
+    window.onload = init;
+</script>
+
+<body>
+    <form action="" name="frm">
+        <input type="text" name="eersteGetal" value="0"><br>
+        <input type="button" value="+" name="optelling"><br>
+        <input type="button" value="-" name="aftrekking"><br>
+        <input type="button" value="*" name="vermenigvuldiging"><br>
+        <input type="button" value="/" name="deling"><br>
+        <input type="text" name="tweedeGetal" value="0"><br>
+        =<br>
+        <input type="text" name="resultaat" value="0" readonly>
+    </form>
+</body>
+
+</html>

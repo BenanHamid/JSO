@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        'use strict';
+
+        function email() {
+            var emailadres = frm.email.value;
+            if (emailadres.indexOf('@') != -1) {
+                alert("geldig e-mail adres ");
+            } else {
+                alert("geen geldig e-mail adres");
+            }
+        }
+
+        function init() {
+            var button = document.getElementById('btn');
+            button.onclick = email;
+        }
+
+        window.onload = init;
+    </script>
+</head>
+
+<body>
+    <form action="" name="frm">
+        <input type="text" name="email" placeholder="Vul je e-mail in:">
+        <input type="button" id="btn" value="Verzenden">
+    </form>
+</body>
+
+</html>

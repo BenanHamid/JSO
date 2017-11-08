@@ -13,7 +13,10 @@
     <div id="wrapper">
         <header>
             <div class="logo">
-                <h1>Brooo-o-odjes!</h1>
+                <img src="logo.png" alt="Broodjes">
+                <h1>
+                    <a href="index.html">Brooo-o-odjes!</a>
+                </h1>
             </div>
             <nav>
                 <ul>
@@ -27,25 +30,31 @@
             </nav>
         </header>
         <main>
-            <form action="POST" class="form">
-                <select>
-                    <option value="Broodje #1">Broodje #1</option>
-                    <option value="Broodje #2">Broodje #2</option>
-                    <option value="Broodje #3">Broodje #3</option>
-                    <option value="Broodje #4">Broodje #4</option>
-                    <option value="Broodje #5">Broodje #5</option>
-                    <option value="Broodje #6">Broodje #6</option>
-                </select><br>
-                <label>
-                    <input type="radio" name="brood" value="Wit"> Wit
-                </label>
-                <label>
-                    <input type="radio" name="brood" value="Bruin"> Bruin</label><br>
-                <label>
-                    <input type="checkbox" name="Smoss" value="Smoss"> Smoss? 
-                </label><br>
-                <input class="bestel" type="button" name="btn" value="Bestellen">
-            </form>
+            <h2>Bestel broodjes!</h2>
+            <div class="frm">
+                <form action="POST" class="form">
+                    <select>
+                        <option value="Broodje #1">Broodje #1</option>
+                        <option value="Broodje #2">Broodje #2</option>
+                        <option value="Broodje #3">Broodje #3</option>
+                        <option value="Broodje #4">Broodje #4</option>
+                        <option value="Broodje #5">Broodje #5</option>
+                        <option value="Broodje #6">Broodje #6</option>
+                    </select>
+                    <br>
+                    <label>
+                        <input type="radio" name="brood" value="Wit"> Wit
+                    </label>
+                    <label>
+                        <input type="radio" name="brood" value="Bruin"> Bruin</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="Smoss" value="Smoss"> Smoss?
+                    </label>
+                    <br>
+                    <input class="bestel" type="submit" name="btn" value="Bestellen">
+                </form>
+            </div>
             <table>
                 <tr>
                     <th>Broodje</th>
@@ -53,12 +62,12 @@
                     <th>Smoss</th>
                 </tr>
                 <tr>
-                    <td>Broodje #1</td>
+                    <td>Broodje #2</td>
                     <td>Wit</td>
                     <td>Ja</td>
                 </tr>
                 <tr>
-                    <td>Broodje #1</td>
+                    <td>Broodje #5</td>
                     <td>Bruin</td>
                     <td>Nee</td>
                 </tr>
@@ -79,7 +88,13 @@
         </aside>
 
         <footer>
-            <p>2017 - Gemaakt met <b class="heart">♥</b> in Hoboken, België<span class="footer-nav"><a href="index.html">Starpagina</a><a href="bestel.html">Bestellen</a></span></p>
+            <p>2017 - Gemaakt met
+                <b class="heart">♥</b> in Hoboken, België
+            </p>
+            <div class="footer-nav">
+                <a href="index.html">Starpagina</a>
+                <a href="bestel.html">Bestellen</a>
+            </div>
         </footer>
     </div>
 </body>

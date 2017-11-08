@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        'use strict';
+        var getal2;
+
+        function getal() {
+            var getal1 = parseInt(frm.txtGetal.value);
+            var poging = 0;
+
+            console.log(getal2);
+
+            if (isNaN(getal1)) {
+                alert('Geef een geldig nummer')
+            } else {
+                poging++ 
+                if (getal1 > getal2) {
+                    alert('Lager');
+                } else if (getal1 < getal2) {
+                    alert('Hoger');
+                } else if (getal1 == getal2) {
+                    alert('Juist');
+                    frm.btn.disabled = true;
+                    frm.txtResult.value = 'Juist in ' + poging + ' pogingen';
+                }
+            }
+
+        }
+
+        function cake() {
+            getal2 = Math.floor(Math.random() * 100) + 1;
+            frm.btn.onclick = getal;
+        }
+
+        window.onload = cake;
+    </script>
+</head>
+
+<body>
+    Geef een getal tussen 1 en 100
+    <br>
+    <form action="" name="frm">
+        <input type="number" name="txtGetal" min="1" max="100">
+        <input type="button" name="btn" value="Vergelijk">
+        <input type="text" style="border:0;" name="txtResult">
+    </form>
+</body>
+
+</html>
