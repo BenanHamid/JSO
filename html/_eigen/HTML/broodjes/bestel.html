@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -23,6 +25,7 @@
                     <li>
                         <a href="index.html">Startpagina</a>
                     </li>
+
                     <li class="active">
                         <a href="bestel.html">Bestel</a>
                     </li>
@@ -31,52 +34,65 @@
         </header>
         <main>
             <h2>Bestel broodjes!</h2>
-            <div class="frm">
-                <form action="POST" class="form">
-                    <select>
-                        <option value="Broodje #1">Broodje #1</option>
-                        <option value="Broodje #2">Broodje #2</option>
-                        <option value="Broodje #3">Broodje #3</option>
-                        <option value="Broodje #4">Broodje #4</option>
-                        <option value="Broodje #5">Broodje #5</option>
-                        <option value="Broodje #6">Broodje #6</option>
-                    </select>
-                    <br>
-                    <label>
-                        <input type="radio" name="brood" value="Wit"> Wit
-                    </label>
-                    <label>
-                        <input type="radio" name="brood" value="Bruin"> Bruin</label>
-                    <br>
-                    <label>
-                        <input type="checkbox" name="Smoss" value="Smoss"> Smoss?
-                    </label>
-                    <br>
-                    <input class="bestel" type="submit" name="btn" value="Bestellen">
-                </form>
-            </div>
+            <p>Lorem voluptate sint occaecat voluptate eu irure occaecat proident excepteur incididunt non nostrud sit consectetur.
+                Aute incididunt veniam Lorem consectetur irure cupidatat nostrud. Trure occaecat proident excepteur incididunt
+                non nostrud sit consectetur. Aute incididunt veniam Lorem consectetur irure cupidatat nostrud. </p>
+
+            <h3>Bestelformulier</h3>
+            <form action="POST">
+                <select name="broodje">
+                    <option value="Tonijnsalade Mayo">Tonijnsalade Mayo</option>
+                    <option value="Pikante Tonijnsalade">Pikante Tonijnsalade</option>
+                    <option value="Surimi-Krabsalade">Surimi-Krabsalade</option>
+                    <option value="Grijze Garnaalsalade">Grijze Garnaalsalade</option>
+                    <option value="Gerookte Zalm">Gerookte Zalm</option>
+                    <option value="Club Ardenne">Club Ardenne</option>
+                </select>
+                <label>
+                    <input type="radio" name="brood" value="Wit"> Wit
+                </label>
+                <label>
+                    <input type="radio" name="brood" value="Bruin"> Bruin</label>
+                <label>
+                    <input type="checkbox" name="Smoss" value="Smoss"> Smoss?
+                </label>
+                <input class="bestel" type="submit" name="btn" value="Bestellen">
+            </form>
+
             <table>
                 <tr>
                     <th>Broodje</th>
                     <th>Brood</th>
                     <th>Smoss</th>
+                    <th>Prijs</th>
                 </tr>
                 <tr>
-                    <td>Broodje #2</td>
+                    <td>Tonijnsalade Mayo</td>
                     <td>Wit</td>
                     <td>Ja</td>
+                    <td>3.19 €</td>
                 </tr>
                 <tr>
-                    <td>Broodje #5</td>
+                    <td>Surimi-Krabsalade</td>
                     <td>Bruin</td>
                     <td>Nee</td>
+                    <td>1.99 €</td>
                 </tr>
                 <tr>
-                    <td>Broodje #1</td>
+                    <td>Club Ardenne</td>
                     <td>Wit</td>
                     <td>Ja</td>
+                    <td>2.69 €</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:right; font-weight:bold;">Totaal:</td>
+                    <td style="font-weight:bold;">7.87 €</td>
                 </tr>
             </table>
+
+            <p class="betal">Betaal
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            </p>
         </main>
         <aside>
             <h2>Het broodje van de dag!</h2>
@@ -84,7 +100,9 @@
             <p>Ex cupidatat ut mollit et laborum id exercitation quis laboris amet reprehenderit ut sunt. Commodo cillum consectetur
                 sunt cupidatat irure amet ipsum tempor qui aliquip commodo duis in. Aute velit do do esse id est velit sint
                 cillum velit ex occaecat. Minim pariatur nulla sint ex magna.</p>
-            <div class="bestel">Bestel</div>
+            <div class="bestel">Bestel
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            </div>
         </aside>
 
         <footer>
@@ -92,8 +110,10 @@
                 <b class="heart">♥</b> in Hoboken, België
             </p>
             <div class="footer-nav">
-                <a href="index.html">Starpagina</a>
-                <a href="bestel.html">Bestellen</a>
+                <a href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i> Starpagina</a>
+                <a href="bestel.html">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i> Bestellen</a>
             </div>
         </footer>
     </div>
