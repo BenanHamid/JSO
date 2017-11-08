@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>oefening DOM 4</title>
+<script>
+    function controleer(){
+       var tekst= frmTekst.txtEMail.value;
+       if (tekst.indexOf("@") == -1){
+          alert("Geen geldig e-mailadres");
+       }else{
+          alert("Geldig e-mailadres");
+       }
+    }
+    function init(){
+        var btn = document.getElementById("btn");
+        btn.onclick = controleer;
+    }
+    window.onload = init;
+</script>
+</head>
+<body>
+<form name="frmTekst">
+e-mail: <input type="text" name="txtEMail" /><br />
+<input type="button" value="klik" id="btn"/>
+</form>
+</body>
+</html>

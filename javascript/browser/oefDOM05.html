@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Oefening DOM 5</title>
+<script>
+    function kopieer(){
+       var tekst1= frmTekst.txtTekst1.value;
+       var tekst2="";
+       for (var i=0;i<tekst1.length;i++){
+          tekst2 = tekst1.charAt(i) + tekst2;
+       } 
+       frmTekst.txtTekst2.value= tekst2;
+    }
+
+    function init(){
+        var btn = document.getElementById("btn");
+        btn.onclick = kopieer;
+    }
+
+    window.onload = init;
+</script>
+</head>
+<body>
+<form name="frmTekst">
+<input type="text" name="txtTekst1" />
+<input type="button" value="klik" id="btn" />
+<input type="text" name="txtTekst2" />
+</form>
+
+</body>
+</html>
